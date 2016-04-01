@@ -1,0 +1,111 @@
+*{box-sizing: border-box; outline: none;}
+
+/* *FONTS */
+  /* guld_script */
+  @font-face {
+    font-family: 'guld_script';
+    src: url('../fonts/guldscript/guldscript-webfont.eot');
+    src: url('../fonts/guldscript/guldscript-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/guldscript/guldscript-webfont.woff2') format('woff2'),
+         url('../fonts/guldscript/guldscript-webfont.woff') format('woff'),
+         url('../fonts/guldscript/guldscript-webfont.ttf') format('truetype'),
+         url('../fonts/guldscript/guldscript-webfont.svg#guld_script_personal_use_onRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  /*  open_sans - 400, 600, 400italic, 700, 300
+      font-family: 'Open Sans', sans-serif;
+  */
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background: #000000 url('../images/design/bg/background.png') no-repeat center top;
+}
+
+header{background: rgba(0, 0, 0, 0.25)}
+
+/* *Edit bootstrap */
+.navbar{border-radius: 0; border: 0;}
+.navbar-inverse{background: transparent;}
+.navbar .navbar-nav .active a{
+  background-color: #1E3049;
+  color: #00A0FC;
+}
+
+.navbar .navbar-brand.brand{
+  color: white;
+  font-family: 'guld_script';
+  font-size: 38px;
+  font-weight: normal;
+}
+
+.navbar-form .form-control{
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 0 5px 0 #fff;
+  color: rgba(0,0,0,0.5);
+}
+
+.navbar-form button[type="submit"]{
+  background: #fff;
+  border-radius: 0;
+  border: none;
+}
+
+.slider-main img{width: 100%;}
+
+.slider-main .slick-prev, .slick-next{
+  background: url(../images/design/icons/arrows.png) no-repeat 0 0;
+  border: none;
+  color: transparent;
+  display: block;
+  height: 23px;
+  position: absolute;
+  right: 0;
+  width: 25px;
+  z-index: 100;
+}
+.slick-slide{margin-right: 5px;}
+
+.slick-track{margin-bottom: 10px;}
+
+.slider-main .slick-prev{top: 25%;}
+
+.slider-main .slick-next{background-position: 0 -28px; top: calc(25% + 30px);}
+
+.slider-main .slick-dots{
+  padding: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.slider-main .slick-dots li{display: inline-block;}
+
+.slider-main .slick-dots li button{
+  background: url(../images/design/icons/slider-dots.png) no-repeat 0 0;
+  border: none;
+  color: transparent;
+  overflow: hidden;
+  height: 15px;
+  width: 14px;
+}
+
+.slider-main .slick-dots li.slick-active button{
+  background-position: -14px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
