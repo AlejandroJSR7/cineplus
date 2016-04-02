@@ -1,7 +1,7 @@
 console.log("cineplus.js");
 
 $('#slider-main').slick({
-  centerMode: false,
+  centerMode: true,
   dots: true,
   arrows: true,
   slidesToShow: 3,
@@ -9,16 +9,16 @@ $('#slider-main').slick({
     {
       breakpoint: 768,
       settings: {
-        arrows: false,
+        arrows: true,
         centerMode: true,
         centerPadding: '40px',
-        slidesToShow: 3
+        slidesToShow: 2
       }
     },
     {
       breakpoint: 480,
       settings: {
-        arrows: false,
+        arrows: true,
         centerMode: true,
         centerPadding: '40px',
         slidesToShow: 1

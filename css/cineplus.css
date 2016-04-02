@@ -2,7 +2,7 @@
 
 /* *FONTS */
   /* guld_script */
-  @font-face {
+  @font-face{
     font-family: 'guld_script';
     src: url('../fonts/guldscript/guldscript-webfont.eot');
     src: url('../fonts/guldscript/guldscript-webfont.eot?#iefix') format('embedded-opentype'),
@@ -47,13 +47,36 @@ header{background: rgba(0, 0, 0, 0.25)}
   color: rgba(0,0,0,0.5);
 }
 
-.navbar-form button[type="submit"]{
-  background: #fff;
-  border-radius: 0;
-  border: none;
+.navbar-form .form-group{
+  position: relative;
 }
 
-.slider-main img{width: 100%;}
+.navbar-form button[type="submit"]{
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  color: rgba(0,0,0,0.5);
+  font-size: 20px;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.navbar .navbar-nav .navbar-form{
+  padding-top: 4px;
+}
+.navbar .navbar-nav .navbar-form .form-control{
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 720px) {
+  .navbar .navbar-nav .navbar-form .form-control{
+    width: 220px;
+  }
+}
+
+.slider-main img{max-height: 260px; width: 100%;}
 
 .slider-main .slick-prev, .slick-next{
   background: url(../images/design/icons/arrows.png) no-repeat 0 0;
@@ -95,9 +118,38 @@ header{background: rgba(0, 0, 0, 0.25)}
   background-position: -14px 0;
 }
 
+.slider-item{
+  color: #fff;
+  font-size: 24px;
+  font-weight: normal;
+  position: relative;
+}
 
+.slider-item h2,h3{
+  bottom: 0;
+  font-size: 24px;
+  left: 5%;
+  position: absolute;
+  width: 90%;
+}
+.slider-item h2{bottom: 30px;}
+.slider-item h3{font-family: 'guld_script'; font-weight: normal;}
 
+.slider-item:not(.slick-center){
+  opacity: 0.70;
+  color: transparent;
+}
 
+.slider-item.slick-active{opacity: 1;}
+
+.more{
+  background: url(../images/design/icons/more-dots.png) no-repeat center center;
+  display: inline-block;
+  height: 5px;
+  width: 20px;
+}
+
+.white{color: #fff;}
 
 
 
