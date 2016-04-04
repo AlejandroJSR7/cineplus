@@ -518,7 +518,7 @@ footer{
 .movies-top-page .list-inline a:hover{color: #fa0;}
 
 
-.loading-screen{
+#loading-screen{
   background: #000 url(../images/design/misc/cinePlus-logo.png) no-repeat center center;
   bottom: 0;
   left: 0;
