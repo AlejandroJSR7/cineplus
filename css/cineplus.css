@@ -222,6 +222,7 @@ aside h4{
 .movie{
   display: inline-block;
   min-height: 220px;
+  position: relative;
 }
 
 .movie__image{
@@ -252,7 +253,14 @@ aside h4{
 
 .movie__title a{color: white;}
 
+
 .movie__options{float: left;}
+
+.options_dropdown{
+  position: absolute;
+  right: 5px;
+  top: 145px;
+}
 
 .movie__options ul{
   font-size: 13px;
@@ -322,6 +330,7 @@ aside h4{
   display: inline-block;
   height: 100px;
   line-height: 100px;
+  margin-bottom: 10px;
   text-align: center;
   width: 300px;
 }
