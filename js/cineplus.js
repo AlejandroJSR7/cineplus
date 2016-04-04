@@ -4,10 +4,6 @@ $(window).load(function(){
   $('#loading-screen').fadeOut(2000);
 });
 
-$(document).on("pagecontainerload",function(){
-  alert("pagecontainerload event fired!");
-});
-
 $('#slider-main').slick({
   dots: true,
   infinite: true,
