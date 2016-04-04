@@ -1,5 +1,13 @@
 console.log("cineplus.js");
 
+$(window).load(function() {
+  $(".loading-screen").fadeOut("slow");
+})
+
+$(document).on("pagecontainerload",function(){
+  alert("pagecontainerload event fired!");
+});
+
 $('#slider-main').slick({
   dots: true,
   infinite: true,
@@ -36,3 +44,9 @@ $('.slider-categories').slick({
   centerMode: true,
   variableWidth: true
 });
+
+
+$('.nav-tabs-movies a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})

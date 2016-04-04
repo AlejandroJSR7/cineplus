@@ -1,49 +1,92 @@
-*{box-sizing: border-box; outline: none;}
-
 /* *FONTS */
+
+  /*  Avenir Next */
+    @font-face {
+      font-family: 'Avenir Next';
+      src: url('../fonts/AvenirNext-Regular/AvenirNext-Regular.eot');
+      src: url('../fonts/AvenirNext-Regular/AvenirNext-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvenirNext-Regular/AvenirNext-Regular.woff') format('woff'),
+        url('../fonts/AvenirNext-Regular/AvenirNext-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Avenir Next';
+      src: url('../fonts/AvenirNext-Italic/AvenirNext-Italic.eot');
+      src: url('../fonts/AvenirNext-Italic/AvenirNext-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvenirNext-Italic/AvenirNext-Italic.woff') format('woff'),
+        url('../fonts/AvenirNext-Italic/AvenirNext-Italic.ttf') format('truetype');
+      font-weight: normal;
+      font-style: italic;
+    }
+
+    @font-face {
+      font-family: 'Avenir Next Demi';
+      src: url('../fonts/AvenirNext-DemiBold/AvenirNext-DemiBold.eot');
+      src: url('../fonts/AvenirNext-DemiBold/AvenirNext-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvenirNext-DemiBold/AvenirNext-DemiBold.woff') format('woff'),
+        url('../fonts/AvenirNext-DemiBold/AvenirNext-DemiBold.ttf') format('truetype');
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Avenir Next';
+      src: url('../fonts/AvenirNext-Medium/AvenirNext-Medium.eot');
+      src: url('../fonts/AvenirNext-Medium/AvenirNext-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvenirNext-Medium/AvenirNext-Medium.woff') format('woff'),
+        url('../fonts/AvenirNext-Medium/AvenirNext-Medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+
   /* guld_script */
-  @font-face{
-    font-family: 'guld_script';
-    src: url('../fonts/guldscript/guldscript-webfont.eot');
-    src: url('../fonts/guldscript/guldscript-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/guldscript/guldscript-webfont.woff2') format('woff2'),
-         url('../fonts/guldscript/guldscript-webfont.woff') format('woff'),
-         url('../fonts/guldscript/guldscript-webfont.ttf') format('truetype'),
-         url('../fonts/guldscript/guldscript-webfont.svg#guld_script_personal_use_onRg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-  /*  Avenir LTStd
-  */
-
-  @font-face {
-    font-family: 'Avenir LT Std 35 Light';
-    font-style: normal;
-    font-weight: normal;
-    src: local('../fonts/avenir-lt-std/Avenir LT Std 35 Light'), url('../fonts/avenir-lt-std/AvenirLTStd-Light.woff') format('woff');
-  }
-
-  @font-face {
-    font-family: 'Avenir LT Std 55 Roman';
-    font-style: normal;
-    font-weight: normal;
-    src: local('../fonts/avenir-lt-std/Avenir LT Std 55 Roman'), url('../fonts/avenir-lt-std/AvenirLTStd-Roman.woff') format('woff');
-  }
+    @font-face {
+      font-family: 'Guld Script';
+      src: url('../fonts/guldScript-WebFont/GuldScript.eot');
+      src: url('../fonts/guldScript-WebFont/GuldScript.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/guldScript-WebFont/GuldScript.woff') format('woff'),
+        url('../fonts/guldScript-WebFont/GuldScript.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
 
 /*/ end-fonts */
 
+*{box-sizing: border-box; outline: none;}
+a:hover{color: inherit; opacity: 0.75; text-decoration: none;}
+
 body{
   background: #000000 url('../images/design/bg/bgbody.jpg') no-repeat center top;
-  font-family: 'Avenir LT Std 55 Roman';
-  font-weight: 400;
+  font-family: 'Avenir Next';
+  font-style: normal;
+  font-weight: normal;
   overflow-x: hidden; 
 }
 
 header{background: rgba(0, 0, 0, 0.25)}
 
-/* *Edit bootstrap */
-.navbar{border-radius: 0; border: 0; margin: 0;}
+aside h4{
+  color: #fff;
+  font-family: 'Avenir Next';
+  font-weight: 500;
+}
+
+/* Helpers */
+  .push-top{margin-top: 20px;}
+  .white{color: #fff;}
+  .page-white{background: white;}
+  .page-white header{background: #000;}
+
+.navbar{
+  border-radius: 0;
+  border: 0;
+  margin: 0;
+}
+
 .navbar-inverse{background: transparent;}
+
 .navbar .navbar-nav .active a{
   background-color: #1E3049;
   color: #00A0FC;
@@ -51,7 +94,7 @@ header{background: rgba(0, 0, 0, 0.25)}
 
 .navbar .navbar-brand.brand{
   color: white;
-  font-family: 'guld_script';
+  font-family: 'Guld Script';
   font-size: 38px;
   font-weight: normal;
 }
@@ -63,9 +106,7 @@ header{background: rgba(0, 0, 0, 0.25)}
   color: rgba(0,0,0,0.5);
 }
 
-.navbar-form .form-group{
-  position: relative;
-}
+.navbar-form .form-group{position: relative;}
 
 .navbar-form button[type="submit"]{
   background: transparent;
@@ -79,12 +120,9 @@ header{background: rgba(0, 0, 0, 0.25)}
   top: 0;
 }
 
-.navbar .navbar-nav .navbar-form{
-  padding-top: 4px;
-}
-.navbar .navbar-nav .navbar-form .form-control{
-  border-radius: 2px;
-}
+.navbar .navbar-nav .navbar-form{padding-top: 4px;}
+
+.navbar .navbar-nav .navbar-form .form-control{border-radius: 2px;}
 
 @media screen and (min-width: 720px) {
   .navbar .navbar-nav .navbar-form .form-control{
@@ -93,7 +131,11 @@ header{background: rgba(0, 0, 0, 0.25)}
 }
 
 .slider-main{background: #000;}
-.slider-main img{max-height: 260px; width: 100%;}
+
+.slider-main img{
+  max-height: 260px;
+  width: 100%;
+}
 
 .slick-prev, .slick-next{
   background: url(../images/design/icons/arrows.png) no-repeat 0 0;
@@ -106,11 +148,15 @@ header{background: rgba(0, 0, 0, 0.25)}
   width: 25px;
   z-index: 100;
 }
+
 .slick-slide{margin-right: 5px;}
 
 .slick-prev{top: 25%;}
 
-.slick-next{background-position: 0 -28px; top: calc(25% + 30px);}
+.slick-next{
+  background-position: 0 -28px;
+  top: calc(25% + 30px);
+}
 
 .slider-main .slick-dots{
   margin: 0 auto;
@@ -127,14 +173,12 @@ header{background: rgba(0, 0, 0, 0.25)}
   background: url(../images/design/icons/slider-dots.png) no-repeat 0 0;
   border: none;
   color: transparent;
-  overflow: hidden;
   height: 15px;
+  overflow: hidden;
   width: 14px;
 }
 
-.slider-main .slick-dots li.slick-active button{
-  background-position: -14px 0;
-}
+.slider-main .slick-dots li.slick-active button{background-position: -14px 0;}
 
 .slider-item{
   color: #fff;
@@ -150,19 +194,20 @@ header{background: rgba(0, 0, 0, 0.25)}
   position: absolute;
   width: 90%;
 }
+
 .slider-item h2{
   bottom: 30px;
-  font-family: 'Avenir LT Std 35 Light';
   font-weight: normal;
 }
+
 .slider-item h4{
-  font-family: 'guld_script';
+  font-family: 'Guld Script';
   font-weight: normal;
 }
 
 .slider-item:not(.slick-center){
-  opacity: 0.80;
   color: transparent;
+  opacity: 0.80;
 }
 
 .slider-item.slick-active{opacity: 1;}
@@ -174,8 +219,6 @@ header{background: rgba(0, 0, 0, 0.25)}
   width: 20px;
 }
 
-.white{color: #fff;}
-
 .movie{
   display: inline-block;
   min-height: 220px;
@@ -186,13 +229,9 @@ header{background: rgba(0, 0, 0, 0.25)}
   width: 110px;
 }
 
-.movie__image figure{
-  position: relative;
-}
+.movie__image figure{position: relative;}
 
-.movie__image figure a{
-  display: block;
-}
+.movie__image figure a{display: block;}
 
 .movie__image figure img{}
 
@@ -206,14 +245,12 @@ header{background: rgba(0, 0, 0, 0.25)}
 }
 
 .movie__title{
+  color: white;
   font-size: 12px;
   font-weight: normal;
-  color: white;
 }
 
-.movie__title a{
-  color: white;
-}
+.movie__title a{color: white;}
 
 .movie__options{float: left;}
 
@@ -223,9 +260,7 @@ header{background: rgba(0, 0, 0, 0.25)}
   padding: 0 0 0 10px;
 }
 
-.movie__options ul li i{
-  margin-right: 10px;
-}
+.movie__options ul li i{margin-right: 10px;}
 
 .movie__options > ul > li > a{color: #fff;}
 
@@ -250,9 +285,7 @@ header{background: rgba(0, 0, 0, 0.25)}
 
 .slider-categories-item a{display: block;}
 
-.slider-categories-item:hover{
-  box-shadow: 0 0 5px 0 #8B572A;
-}
+.slider-categories-item:hover{box-shadow: 0 0 5px 0 #8B572A;}
 
 .slider-categories-image{
   border-radius: 8px;
@@ -262,7 +295,7 @@ header{background: rgba(0, 0, 0, 0.25)}
 
 .slider-categories-name{
   color: #fff;
-  font-family: 'guld_script';
+  font-family: 'Guld Script';
   font-size: 38px;
   font-weight: normal;
   left: 50%;
@@ -273,14 +306,13 @@ header{background: rgba(0, 0, 0, 0.25)}
   transform: translate(-50%, -50%);
 }
 
-.slider-categories .slick-track{
-  padding-top: 30px;
-}
+.slider-categories .slick-track{padding-top: 30px;}
 
 .slider-categories .slick-prev,
 .slider-categories .slick-next{top: 0px;}
 
 .slider-categories .slick-prev{left: 0;} 
+
 .slider-categories .slick-next{left: 30px;}
 
 .btn-option{
@@ -295,9 +327,9 @@ header{background: rgba(0, 0, 0, 0.25)}
 }
 
 .btn-option span{
-  font-family: 'guld_script';
+  font-family: 'Guld Script';
   font-size: 35px;
-  font-weight: 100;
+  font-weight: normal;
 }
 
 .btn-option:hover{
@@ -314,18 +346,21 @@ footer{
   padding-bottom: 30px;
   padding-top: 30px;
 }
+
 .footer-menu {
-  font-family: 'guld_script';
+  font-family: 'Guld Script';
   font-size: 24px;
   font-weight: normal;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 .footer-menu li{
   color: #fff;
   display: inline-block;
 }
+
 .footer-menu li a{
   color: #fff;
   display: block;
@@ -362,36 +397,120 @@ footer{
   margin: 0;
   padding: 0;
 }
-.movies-top__item{}
-.movies-top__item a{display: block;}
-.movies-top__image{float: left;}
+
+.movies-top__item{
+  color: #A6A6AB;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.movies-top__item a{
+  display: inline-flex;
+  vertical-align: top;
+}
+
+.movies-top__image{
+  float: left;
+  margin-right: 15px;
+}
+
 .movies-top__image img{}
+
 .movies-top__details{float: left;}
+
 .movies-top__details h4{
   color: white;
   font-size: 12px;
+  margin: 0;
 }
-
 
 .list-links{
   list-style-type: none;
   padding: 0;
 }
+
 .list-links li{}
-.list-links li a{
+
+.list-links li a{color: #fff;}
+
+.sidebar__title{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.see-all{
+  color: #fff;
+  float: right;
+}
+
+.see-all:hover, 
+.see-all:focus,
+.see-all:active,
+.see-all:visited{
   color: #fff;
 }
 
-/*
-  ******** Revisar tipografía y fuentes de nuevo
-  ******** Revisar tipografía y fuentes de nuevo
-  ******** Revisar tipografía y fuentes de nuevo
-  ******** Revisar tipografía y fuentes de nuevo
-  ******** Revisar tipografía y fuentes de nuevo
-*/
+.nav-tabs-movies{
+  display: block;
+  font-weight: normal;
+  list-style-type: none;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.nav-tabs-movies:after{
+  clear: both;
+  content: " ";
+  display: block;
+}
+
+.nav-tabs-movies li{
+  display: inline-block;
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.nav-tabs-movies li.active{border-bottom: 1px solid #00A0FC;}
+
+.nav-tabs-movies li:not(.active) a{opacity: 0.3;}
+
+.nav-tabs-movies li a{
+  color: white;
+  display: block;
+}
+
+.nav-tabs-movies li a:hover,
+.nav-tabs-movies li a:focus{
+  text-decoration: none;
+}
 
 
+.form-new-account{
+  border-radius: 3px;
+  margin: 20px auto 0;
+  padding: 20px;
+  width: 50%;
+}
+
+.movie-checkbox label{
+  display: inline-block;
+  width: 49%;
+}
+
+.margin-none--bottom{margin-bottom: 0;}
+
+.movies-top-page{}
+.movies-top-page .list-inline a{color: #000;}
+.movies-top-page .list-inline a:hover{color: #fa0;}
 
 
-
-  
+.loading-screen{
+  background: #000 url(../images/design/misc/cinePlus-logo.png) no-repeat center center;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100000;
+}
