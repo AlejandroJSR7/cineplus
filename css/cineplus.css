@@ -13,20 +13,36 @@
     font-weight: normal;
     font-style: normal;
   }
-  /*  open_sans - 400, 600, 400italic, 700, 300
-      font-family: 'Open Sans', sans-serif;
+  /*  Avenir LTStd
   */
 
+  @font-face {
+    font-family: 'Avenir LT Std 35 Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/avenir-lt-std/Avenir LT Std 35 Light'), url('../fonts/avenir-lt-std/AvenirLTStd-Light.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Avenir LT Std 55 Roman';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/avenir-lt-std/Avenir LT Std 55 Roman'), url('../fonts/avenir-lt-std/AvenirLTStd-Roman.woff') format('woff');
+  }
+
+/*/ end-fonts */
+
 body{
-  font-family: 'Open Sans', sans-serif;
+  background: #000000 url('../images/design/bg/bgbody.jpg') no-repeat center top;
+  font-family: 'Avenir LT Std 55 Roman';
   font-weight: 400;
-  background: #000000 url('../images/design/bg/background.png') no-repeat center top;
+  overflow-x: hidden; 
 }
 
 header{background: rgba(0, 0, 0, 0.25)}
 
 /* *Edit bootstrap */
-.navbar{border-radius: 0; border: 0;}
+.navbar{border-radius: 0; border: 0; margin: 0;}
 .navbar-inverse{background: transparent;}
 .navbar .navbar-nav .active a{
   background-color: #1E3049;
@@ -76,31 +92,33 @@ header{background: rgba(0, 0, 0, 0.25)}
   }
 }
 
+.slider-main{background: #000;}
 .slider-main img{max-height: 260px; width: 100%;}
 
-.slider-main .slick-prev, .slick-next{
+.slick-prev, .slick-next{
   background: url(../images/design/icons/arrows.png) no-repeat 0 0;
   border: none;
   color: transparent;
   display: block;
   height: 23px;
+  left: 0;
   position: absolute;
-  right: 0;
   width: 25px;
   z-index: 100;
 }
 .slick-slide{margin-right: 5px;}
 
-.slick-track{margin-bottom: 10px;}
+.slick-prev{top: 25%;}
 
-.slider-main .slick-prev{top: 25%;}
-
-.slider-main .slick-next{background-position: 0 -28px; top: calc(25% + 30px);}
+.slick-next{background-position: 0 -28px; top: calc(25% + 30px);}
 
 .slider-main .slick-dots{
-  padding: 0;
-  text-align: center;
   margin: 0 auto;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 10px;
+  text-align: center;
 }
 
 .slider-main .slick-dots li{display: inline-block;}
@@ -125,18 +143,25 @@ header{background: rgba(0, 0, 0, 0.25)}
   position: relative;
 }
 
-.slider-item h2,h3{
+.slider-item h2, .slider-item h4{
   bottom: 0;
   font-size: 24px;
   left: 5%;
   position: absolute;
   width: 90%;
 }
-.slider-item h2{bottom: 30px;}
-.slider-item h3{font-family: 'guld_script'; font-weight: normal;}
+.slider-item h2{
+  bottom: 30px;
+  font-family: 'Avenir LT Std 35 Light';
+  font-weight: normal;
+}
+.slider-item h4{
+  font-family: 'guld_script';
+  font-weight: normal;
+}
 
 .slider-item:not(.slick-center){
-  opacity: 0.70;
+  opacity: 0.80;
   color: transparent;
 }
 
@@ -151,13 +176,222 @@ header{background: rgba(0, 0, 0, 0.25)}
 
 .white{color: #fff;}
 
+.movie{
+  display: inline-block;
+  min-height: 220px;
+}
+
+.movie__image{
+  float: left;
+  width: 110px;
+}
+
+.movie__image figure{
+  position: relative;
+}
+
+.movie__image figure a{
+  display: block;
+}
+
+.movie__image figure img{}
+
+.i-seen-this{
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.movie__title{
+  font-size: 12px;
+  font-weight: normal;
+  color: white;
+}
+
+.movie__title a{
+  color: white;
+}
+
+.movie__options{float: left;}
+
+.movie__options ul{
+  font-size: 13px;
+  list-style-type: none;
+  padding: 0 0 0 10px;
+}
+
+.movie__options ul li i{
+  margin-right: 10px;
+}
+
+.movie__options > ul > li > a{color: #fff;}
+
+.movie__options .more {}
+
+.slider-categories{}
+
+.slider-categories-item{
+  border-radius: 8px;
+  position: relative;
+}
+
+.slider-categories-item:before{
+  background: rgba(0,0,0,0.5);
+  border-radius: 8px;
+  content: " ";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.slider-categories-item a{display: block;}
+
+.slider-categories-item:hover{
+  box-shadow: 0 0 5px 0 #8B572A;
+}
+
+.slider-categories-image{
+  border-radius: 8px;
+  height: 100px;
+  width: 200px;
+}
+
+.slider-categories-name{
+  color: #fff;
+  font-family: 'guld_script';
+  font-size: 38px;
+  font-weight: normal;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider-categories .slick-track{
+  padding-top: 30px;
+}
+
+.slider-categories .slick-prev,
+.slider-categories .slick-next{top: 0px;}
+
+.slider-categories .slick-prev{left: 0;} 
+.slider-categories .slick-next{left: 30px;}
+
+.btn-option{
+  background: rgba(216,216,216,0.1);
+  border-radius: 8px;
+  color: #fff;
+  display: inline-block;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  width: 300px;
+}
+
+.btn-option span{
+  font-family: 'guld_script';
+  font-size: 35px;
+  font-weight: 100;
+}
+
+.btn-option:hover{
+  box-shadow: 0 0 0 1px #979797;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+footer{
+  background: rgba(216,216,216,0.1);
+  border-top: 1px solid #2F2F2F;
+  margin-top: 10px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.footer-menu {
+  font-family: 'guld_script';
+  font-size: 24px;
+  font-weight: normal;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-menu li{
+  color: #fff;
+  display: inline-block;
+}
+.footer-menu li a{
+  color: #fff;
+  display: block;
+}
+
+.footer-menu li a:hover{
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.footer-social-icons{
+  font-size: 25px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social-icons li{
+  color: #fff;
+  display: inline-block;
+}
+
+.footer-social-icons li a{
+  color: #fff;
+  display: block;
+}
+
+.footer-social-icons li a:hover{
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.movies-top{
+  margin: 0;
+  padding: 0;
+}
+.movies-top__item{}
+.movies-top__item a{display: block;}
+.movies-top__image{float: left;}
+.movies-top__image img{}
+.movies-top__details{float: left;}
+.movies-top__details h4{
+  color: white;
+  font-size: 12px;
+}
+
+
+.list-links{
+  list-style-type: none;
+  padding: 0;
+}
+.list-links li{}
+.list-links li a{
+  color: #fff;
+}
+
+/*
+  ******** Revisar tipografía y fuentes de nuevo
+  ******** Revisar tipografía y fuentes de nuevo
+  ******** Revisar tipografía y fuentes de nuevo
+  ******** Revisar tipografía y fuentes de nuevo
+  ******** Revisar tipografía y fuentes de nuevo
+*/
 
 
 
 
 
-
-
-
-
-
+  

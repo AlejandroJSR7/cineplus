@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
   <title>cinePlus +</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,700,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/slick.css"/>
   <link rel="stylesheet" href="css/cineplus.css">
@@ -73,8 +72,8 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="more"></i></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Acceder</a></li>
-                    <li><a href="#">Crear cuenta</a></li>
+                    <li><a data-toggle="modal" data-target="#myModal" href="#">Acceder</a></li>
+                    <li><a href="create-account.html">Crear cuenta</a></li>
                     <li role="separator" class="divider"></li>
                     <li><a href="#">Sobre nosotros</a></li>
                   </ul>
@@ -91,44 +90,489 @@
       <div class="slider-item">
         <img src="images/content/slider/batman-vs-superman.jpg" alt="Batman vs Superman">
         <h2 class="slider-movie-title">Batman vs Superman el origen de la justicia</h2>
-        <h3 class="slider-movie-subtitle">acción, ficción, superheroes</h3>
+        <h4 class="slider-movie-subtitle">acción, ficción, superheroes</h4>
       </div>
       <div class="slider-item">
         <img src="images/content/slider/yo-vi-al-diablo.jpg" alt="Yo vi al diablo">
         <h2 class="slider-movie-title">Visions</h2>
-        <h3 class="slider-movie-subtitle">Horror</h3>
+        <h4 class="slider-movie-subtitle">Horror</h4>
       </div>
       <div class="slider-item">
         <img src="images/content/slider/volando-alto.jpg" alt="Volando alto">
         <h2 class="slider-movie-title">Volando alto</h2>
-        <h3 class="slider-movie-subtitle">comedia-romántica</h3>
+        <h4 class="slider-movie-subtitle">comedia-romántica</h4>
       </div>
       <div class="slider-item">
         <img src="images/content/slider/13-minutos.jpg" alt="13 minutos">
         <h2 class="slider-movie-title">13 Minutos</h2>
-        <h3 class="slider-movie-subtitle">Drama</h3>
+        <h4 class="slider-movie-subtitle">Drama</h4>
       </div>
       <div class="slider-item">
         <img src="images/content/slider/el-renacido.jpg" alt="El renacido">
         <h2 class="slider-movie-title">El Renacido</h2>
-        <h3 class="slider-movie-subtitle">Historical drama</h3>
+        <h4 class="slider-movie-subtitle">Historical drama</h4>
       </div>
       <div class="slider-item">
         <img src="images/content/slider/kung-fu-panda.jpg" alt="Kung Fu Panda">
         <h2 class="slider-movie-title">Kung Fu Panda</h2>
-        <h3 class="slider-movie-subtitle">animación, aventura, comedia, infantil</h3>
+        <h4 class="slider-movie-subtitle">animación, aventura, comedia, infantil</h4>
       </div>
     </div>
   </section>
   <section class="main">
-    <div class="row">
-      <div class="col-sm-9">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias dolore magni, earum dolor labore quam quos! Molestiae iure alias possimus. Velit a fuga quia voluptas, atque dolores enim, dolor similique.</div>
-      <div class="col-sm-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias dolore magni, earum dolor labore quam quos! Molestiae iure alias possimus. Velit a fuga quia voluptas, atque dolores enim, dolor similique.</div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-9">
+          <article class="movie">
+            <div class="movie__image">
+              <figure>
+                <a href="javascript:;">
+                  <img src="images/content/movies/thumb/kingsman.jpg" alt="Kingsman: The Secret Service" title="Click to see details of Kingsman: The Secret Service">
+                </a>
+                <i class="fa fa-eye i-seen-this" title="I seen this"></i>
+              </figure>
+              <h3 class="movie__title">
+                <a href="javascript:;">
+                  Kingsman: The Secret Service
+                </a>
+              </h3>
+            </div>
+            <div class="movie__options">
+              <ul>
+                <li><a href="javascript:;"><i class="fa fa-desktop"></i>Trailer</a></li>
+                <li><a href="javascript:;"><i class="fa fa-film"></i>Salas de cine</a></li>
+                <li><a href="javascript:;"><i class="fa fa-calendar"></i>Reservar</a></li>
+                <li><a href="javascript:;"><i class="fa fa-star-o"></i>Favorita</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="more"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Ya la he visto</a></li>
+                      <li><a href="#">No me interesa</a></li>
+                      <li><a href="#">Ir a Wikipedia</a></li>
+                    </ul>
+                  </li>
+              </ul>
+            </div>
+          </article>
+          <article class="movie">
+            <div class="movie__image">
+              <figure>
+                <a href="javascript:;">
+                  <img src="images/content/movies/thumb/avengers.jpg" alt="Avengers: Age of Ultron" title="Click to see details of Avengers: Age of Ultron">
+                </a>
+                <i class="fa fa-eye i-seen-this" title="I seen this"></i>
+              </figure>
+              <h3 class="movie__title">
+                <a href="javascript:;">
+                  Avengers: Age of Ultron
+                </a>
+              </h3>
+            </div>
+            <div class="movie__options">
+              <ul>
+                <li><a href="javascript:;"><i class="fa fa-desktop"></i>Trailer</a></li>
+                <li><a href="javascript:;"><i class="fa fa-film"></i>Salas de cine</a></li>
+                <li><a href="javascript:;"><i class="fa fa-calendar"></i>Reservar</a></li>
+                <li><a href="javascript:;"><i class="fa fa-star-o"></i>Favorita</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="more"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Ya la he visto</a></li>
+                      <li><a href="#">No me interesa</a></li>
+                      <li><a href="#">Ir a Wikipedia</a></li>
+                    </ul>
+                  </li>
+              </ul>
+            </div>
+          </article>
+          <article class="movie">
+            <div class="movie__image">
+              <figure>
+                <a href="javascript:;">
+                  <img src="images/content/movies/thumb/mad-max.jpg" alt="Mad Max: Fury Road" title="Click to see details of Mad Max: Fury Road">
+                </a>
+                <i class="fa fa-eye i-seen-this" title="I seen this"></i>
+              </figure>
+              <h3 class="movie__title">
+                <a href="javascript:;">
+                  Mad Max: Fury Road
+                </a>
+              </h3>
+            </div>
+            <div class="movie__options">
+              <ul>
+                <li><a href="javascript:;"><i class="fa fa-desktop"></i>Trailer</a></li>
+                <li><a href="javascript:;"><i class="fa fa-film"></i>Salas de cine</a></li>
+                <li><a href="javascript:;"><i class="fa fa-calendar"></i>Reservar</a></li>
+                <li><a href="javascript:;"><i class="fa fa-star-o"></i>Favorita</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="more"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Ya la he visto</a></li>
+                      <li><a href="#">No me interesa</a></li>
+                      <li><a href="#">Ir a Wikipedia</a></li>
+                    </ul>
+                  </li>
+              </ul>
+            </div>
+          </article>
+          <article class="movie">
+            <div class="movie__image">
+              <figure>
+                <a href="javascript:;">
+                  <img src="images/content/movies/thumb/fifty-shades-of-grey.jpg" alt="Fifty Shades of Grey" title="Click to see details of Fifty Shades of Grey">
+                </a>
+                <i class="fa fa-eye i-seen-this" title="I seen this"></i>
+              </figure>
+              <h3 class="movie__title">
+                <a href="javascript:;">
+                  Fifty Shades of Grey
+                </a>
+              </h3>
+            </div>
+            <div class="movie__options">
+              <ul>
+                <li><a href="javascript:;"><i class="fa fa-desktop"></i>Trailer</a></li>
+                <li><a href="javascript:;"><i class="fa fa-film"></i>Salas de cine</a></li>
+                <li><a href="javascript:;"><i class="fa fa-calendar"></i>Reservar</a></li>
+                <li><a href="javascript:;"><i class="fa fa-star-o"></i>Favorita</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="more"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Ya la he visto</a></li>
+                      <li><a href="#">No me interesa</a></li>
+                      <li><a href="#">Ir a Wikipedia</a></li>
+                    </ul>
+                  </li>
+              </ul>
+            </div>
+          </article>
+          <article class="movie">
+            <div class="movie__image">
+              <figure>
+                <a href="javascript:;">
+                  <img src="images/content/movies/thumb/blackhat.jpg" alt="Blackhat" title="Click to see details of Blackhat">
+                </a>
+                <i class="fa fa-eye i-seen-this" title="I seen this"></i>
+              </figure>
+              <h3 class="movie__title">
+                <a href="javascript:;">
+                  Blackhat
+                </a>
+              </h3>
+            </div>
+            <div class="movie__options">
+              <ul>
+                <li><a href="javascript:;"><i class="fa fa-desktop"></i>Trailer</a></li>
+                <li><a href="javascript:;"><i class="fa fa-film"></i>Salas de cine</a></li>
+                <li><a href="javascript:;"><i class="fa fa-calendar"></i>Reservar</a></li>
+                <li><a href="javascript:;"><i class="fa fa-star-o"></i>Favorita</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="more"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Ya la he visto</a></li>
+                      <li><a href="#">No me interesa</a></li>
+                      <li><a href="#">Ir a Wikipedia</a></li>
+                    </ul>
+                  </li>
+              </ul>
+            </div>
+          </article>
+          <article class="movie">
+            <div class="movie__image">
+              <figure>
+                <a href="javascript:;">
+                  <img src="images/content/movies/thumb/selma.jpg" alt="Selma" title="Click to see details of Selma">
+                </a>
+                <i class="fa fa-eye i-seen-this" title="I seen this"></i>
+              </figure>
+              <h3 class="movie__title">
+                <a href="javascript:;">
+                  Selma
+                </a>
+              </h3>
+            </div>
+            <div class="movie__options">
+              <ul>
+                <li><a href="javascript:;"><i class="fa fa-desktop"></i>Trailer</a></li>
+                <li><a href="javascript:;"><i class="fa fa-film"></i>Salas de cine</a></li>
+                <li><a href="javascript:;"><i class="fa fa-calendar"></i>Reservar</a></li>
+                <li><a href="javascript:;"><i class="fa fa-star-o"></i>Favorita</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="more"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Ya la he visto</a></li>
+                      <li><a href="#">No me interesa</a></li>
+                      <li><a href="#">Ir a Wikipedia</a></li>
+                    </ul>
+                  </li>
+              </ul>
+            </div>
+          </article>
+          <article class="movie">
+            <div class="movie__image">
+              <figure>
+                <a href="javascript:;">
+                  <img src="images/content/movies/thumb/interstellar.jpg" alt="Interstellar" title="Click to see details of Interstellar">
+                </a>
+                <i class="fa fa-eye i-seen-this" title="I seen this"></i>
+              </figure>
+              <h3 class="movie__title">
+                <a href="javascript:;">
+                  Interstellar
+                </a>
+              </h3>
+            </div>
+            <div class="movie__options">
+              <ul>
+                <li><a href="javascript:;"><i class="fa fa-desktop"></i>Trailer</a></li>
+                <li><a href="javascript:;"><i class="fa fa-film"></i>Salas de cine</a></li>
+                <li><a href="javascript:;"><i class="fa fa-calendar"></i>Reservar</a></li>
+                <li><a href="javascript:;"><i class="fa fa-star-o"></i>Favorita</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="more"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Ya la he visto</a></li>
+                      <li><a href="#">No me interesa</a></li>
+                      <li><a href="#">Ir a Wikipedia</a></li>
+                    </ul>
+                  </li>
+              </ul>
+            </div>
+          </article>
+          <article class="movie">
+            <div class="movie__image">
+              <figure>
+                <a href="javascript:;">
+                  <img src="images/content/movies/thumb/jupiter-ascending.jpg" alt="Jupiter Ascending" title="Click to see details of Jupiter Ascending">
+                </a>
+                <i class="fa fa-eye i-seen-this" title="I seen this"></i>
+              </figure>
+              <h3 class="movie__title">
+                <a href="javascript:;">
+                  Jupiter Ascending
+                </a>
+              </h3>
+            </div>
+            <div class="movie__options">
+              <ul>
+                <li><a href="javascript:;"><i class="fa fa-desktop"></i>Trailer</a></li>
+                <li><a href="javascript:;"><i class="fa fa-film"></i>Salas de cine</a></li>
+                <li><a href="javascript:;"><i class="fa fa-calendar"></i>Reservar</a></li>
+                <li><a href="javascript:;"><i class="fa fa-star-o"></i>Favorita</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="more"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Ya la he visto</a></li>
+                      <li><a href="#">No me interesa</a></li>
+                      <li><a href="#">Ir a Wikipedia</a></li>
+                    </ul>
+                  </li>
+              </ul>
+            </div>
+          </article>
+          <hr>
+          <section class="slider-categories">
+            <div class="slider-categories-item">
+              <a href="javascript:;">            
+                <img class="slider-categories-image" src="images/content/movies/categories/terror.jpg" alt="">
+                <h2 class="slider-categories-name">Terror</h2>
+              </a>
+            </div>
+            <div class="slider-categories-item">
+              <a href="javascript:;">            
+                <img class="slider-categories-image" src="images/content/movies/categories/suspenso.jpg" alt="">
+                <h2 class="slider-categories-name">Suspenso</h2>
+              </a>
+            </div>
+            <div class="slider-categories-item">
+              <a href="javascript:;">            
+                <img class="slider-categories-image" src="images/content/movies/categories/comedia.jpg" alt="">
+                <h2 class="slider-categories-name">Comedia</h2>
+              </a>
+            </div>
+            <div class="slider-categories-item">
+              <a href="javascript:;">            
+                <img class="slider-categories-image" src="images/content/movies/categories/fe.jpg" alt="">
+                <h2 class="slider-categories-name">Fe</h2>
+              </a>
+            </div>
+            <div class="slider-categories-item">
+              <a href="javascript:;">            
+                <img class="slider-categories-image" src="images/content/movies/categories/accion.jpg" alt="">
+                <h2 class="slider-categories-name">Acción</h2>
+              </a>
+            </div>
+            <div class="slider-categories-item">
+              <a href="javascript:;">            
+                <img class="slider-categories-image" src="images/content/movies/categories/horror.jpg" alt="">
+                <h2 class="slider-categories-name">Horror</h2>
+              </a>
+            </div>
+            <div class="slider-categories-item">
+              <a href="javascript:;">            
+                <img class="slider-categories-image" src="images/content/movies/categories/drama.jpg" alt="">
+                <h2 class="slider-categories-name">Drama</h2>
+              </a>
+            </div>
+            <div class="slider-categories-item">
+              <a href="javascript:;">            
+                <img class="slider-categories-image" src="images/content/movies/categories/infantil.jpg" alt="">
+                <h2 class="slider-categories-name">Infantil</h2>
+              </a>
+            </div>
+          </section>
+          <hr>
+          
+          <div class="text-center">
+            <a class="btn-option" href="jasvascript:;">
+              Valora 
+              <span> cinePlus +</span>
+            </a>
+            <a class="btn-option" href="jasvascript:;">
+              Opiniones 
+              <span> cinePlus +</span>
+            </a>
+            <a class="btn-option" href="jasvascript:;">
+              Contacto 
+              <span> cinePlus +</span>
+            </a>
+          </div>
+
+        </div>
+        <div class="col-sm-3">
+          <div class="sidebar">
+            <h3>Top Películas</h3>
+            <a href="" class="see-all">Ver todas ></a>
+            <ol class="movies-top">
+              <li class="movies-top__item">
+                <a href="javascript">              
+                  <figure class="movies-top__image"><img src="images/content/movies/top/kingsman.jpg" alt=""></figure>
+                  <div class="movies-top__details">
+                    <h4>Kingsman: The Secret Service</h4>
+                  </div>
+                  <span class="clearfix"></span>
+                </a>
+              </li>
+              <li class="movies-top__item">
+                <a href="javascript">              
+                  <figure class="movies-top__image"><img src="images/content/movies/top/avengers.jpg" alt=""></figure>
+                  <div class="movies-top__details">
+                    <h4>Avengers: Age of Ultron</h4>
+                  </div>
+                  <span class="clearfix"></span>
+                </a>
+              </li>
+              <li class="movies-top__item">
+                <a href="javascript">              
+                  <figure class="movies-top__image"><img src="images/content/movies/top/jupiter-ascending.jpg" alt=""></figure>
+                  <div class="movies-top__details">
+                    <h4>Jupiter Ascending</h4>
+                  </div>
+                  <span class="clearfix"></span>
+                </a>
+              </li>
+            </ol>
+          </div>
+          <aside>
+            <h4>MOVIES QUICK LINKS</h4>
+            <ul class="list-links">
+              <li><a href="javascript:;">Help</a></li>
+              <li><a href="javascript:;">Account</a></li>
+              <li><a href="javascript:;">The Movement</a></li>
+              <li><a href="javascript:;">Support</a></li>
+            </ul>
+            <hr>
+            <ul class="list-links">
+              <li><a href="javascript:;">History</a></li>
+              <li><a href="javascript:;">Recommended for you</a></li>
+              <li><a href="javascript:;">My Movies</a></li>
+            </ul>
+            <hr>
+            <ul class="list-links">
+              <li><a href="javascript:;">Learn More About CinePlus.co</a></li>
+            </ul>
+            <hr>
+            <ul class="list-links">
+              <li><a href="javascript:;">Top All-Time Movies</a></li>
+              <li><a href="javascript:;">Indie New Releases</a></li>
+              <li><a href="javascript:;">Comedy New Releases</a></li>
+              <li><a href="javascript:;">Kids & Family</a></li>
+              <li><a href="javascript:;">Staff Picks</a></li>
+              <li><a href="javascript:;">Movies Just Added</a></li>
+              <li><a href="javascript:;">Theatrical Trailers</a></li>
+            </ul>
+          </aside>
+        </div>
+      </div><!-- /.row -->
     </div>
-  </section>
+  </section><!-- /.main -->
+  <footer>
+    <div class="container-fluid">
+      <nav>
+        <ul class="footer-menu navbar-left">
+          <li><a href="javascript:;">about us</a></li>
+          <li>/</li>
+          <li><a href="javascript:;">jobs</a></li>
+          <li>/</li>
+          <li><a href="javascript:;">contact us</a></li>
+        </ul>
+        <ul class="footer-social-icons navbar-right">
+          <li><a class="fa fa-youtube-square" href="javascript:;"></a></li>
+          <li><a class="fa fa-facebook-square" href="javascript:;"></a></li>
+          <li><a class="fa fa-twitter-square" href="javascript:;"></a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- modals -->
+    <!-- Modal Login-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Acceder a mi cuenta</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Remember me
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group text-right">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
   <script src="js/jquery-1.12.2.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/cineplus.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 </html>

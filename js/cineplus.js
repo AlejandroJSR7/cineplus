@@ -1,10 +1,12 @@
 console.log("cineplus.js");
 
 $('#slider-main').slick({
-  centerMode: true,
   dots: true,
-  arrows: true,
-  slidesToShow: 3,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  centerMode: true,
+  variableWidth: true,
   responsive: [
     {
       breakpoint: 768,
@@ -12,7 +14,7 @@ $('#slider-main').slick({
         arrows: true,
         centerMode: true,
         centerPadding: '40px',
-        slidesToShow: 2
+        slidesToShow: 1
       }
     },
     {
@@ -25,4 +27,12 @@ $('#slider-main').slick({
       }
     }
   ]
+});
+
+
+$('.slider-categories').slick({
+  infinite: true,
+  slidesToShow: 3,
+  centerMode: true,
+  variableWidth: true
 });
