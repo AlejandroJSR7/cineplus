@@ -1,11 +1,7 @@
 console.log("cineplus.js");
 
-$(window).load(function() {
-  $("#loading-screen").fadeOut("slow");
-})
-
-$(document).on("pagecontainerload",function(){
-  alert("pagecontainerload event fired!");
+$(window).load(function(){
+  $('#loading-screen').fadeOut(2000);
 });
 
 $('#slider-main').slick({
