@@ -274,6 +274,10 @@ aside h4{
 
 .movie__options .more {}
 
+.movie__options .fa.fa-star{
+  color: #ff0;
+}
+
 .slider-categories{}
 
 .slider-categories-item{
